@@ -35,7 +35,7 @@ let sites = [steam, epic_games_store, gog]
 
 let container = document.querySelector('main')
 container.style.justifyContent = "start"
-
+container.style.overflowX = 'auto'
 sites.forEach(site => {
     let card = document.createElement('div')
     card.innerHTML = `
