@@ -1,10 +1,10 @@
 // Set data
 let title_text = 'VarCo'
 let navbar_links = {
-    'HOME': '/index.html',
-    'GAMES': '/games.html',
-    'EDUCATION': '/education.html',
-    'CONTACTS': '/contacts.html'
+    'HOME': '',
+    'GAMES': 'games',
+    'EDUCATION': 'education',
+    'CONTACTS': 'contacts'
 }
 let footer_text = 'VarCo • 2024'
 
