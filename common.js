@@ -21,7 +21,9 @@ for (const [key, value] of Object.entries(navbar_links)) {
     let element = document.createElement('a')
     let current_url = window.location.href
     let split = current_url.split('/')
-    let active = window.location.href.split('/')[split.length - 1] == value
+    let path = value.replace('.html', '').replace('index', '')
+    let current_path = window.location.href.split('/')[split.length - 1].replace('.html', '').replace('index', '')
+    let active = current_path == path
     split[split.length - 1] = value
     let link = split.join('/')
     if (active) {
