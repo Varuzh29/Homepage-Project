@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 750px;
+    padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    color: white;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.telegram:hover {
+    color: #0088cc;
+}
+
+a.instagram:hover {
+    color: #fccc63;
+}
+
+a.github:hover {
+    color: #2dba4e;
+}
+
+a.facebook:hover {
+    color: #1877F2;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 8px #00000080;
+}
+
+.hover-scale {
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.hover-scale:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 0px 12px 0px #00000050;
+}
+
+.background-blur {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link {
+    background-color: transparent;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border: transparent;
+    margin: 0.2rem;
+    transition: 0.2s;
+}
+
+.navbar-link:hover {
+    background-color: rgb(255, 255, 255, 0.075);
+}
+
+.navbar-link.active {
+    background-color: white;
+    color: rgb(33, 37, 41);
+}
+
+.sites-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
