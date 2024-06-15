@@ -33,8 +33,8 @@ let gog = {
 
 let sites = [steam, epic_games_store, gog]
 
-let container = document.createElement('main')
-container.classList.add('sites-container')
+let container = document.querySelector('main')
+container.style.justifyContent = "start"
 
 sites.forEach(site => {
     let card = document.createElement('div')
@@ -50,5 +50,3 @@ sites.forEach(site => {
     `
     container.append(card)
 })
-
-document.querySelector('main').append(container)
