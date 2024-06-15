@@ -19,11 +19,15 @@ navbar_element.id = 'navbar'
 navbar_element.classList.add('background-blur')
 for (const [key, value] of Object.entries(navbar_links)) {
     let element = document.createElement('a')
-    let active = window.location.pathname == value
+    let current_url = window.location.href
+    let split = current_url.split('/')
+    let active = window.location.href.split('/')[split.length - 1] == value
+    split[split.length - 1] = value
+    let link = split.join('/')
     if (active) {
         title_element.innerText += ` • ${key}`
     }
-    element.href = value
+    element.href = link
     element.innerHTML = `<button class="navbar-link${active ? ' active' : ''}">${key}</button>`
     navbar_element.append(element)
 }
