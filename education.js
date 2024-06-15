@@ -39,7 +39,7 @@ function get_html(name, description, url, imgUrl) {
   <img src="${imgUrl}" class="card-img" alt="...">
   <div class="card-img-overlay d-flex flex-column justify-content-between">
     <h5 class="card-title text-shadow">${name}</h5>
-    <p class="card-text bg-secondary-subtle p-2 rounded-2 background-blur">${description}</p>
+    <p class="card-text bg-secondary-subtle p-2 rounded-2 background-blur d-inline-block text-truncate">${description}</p>
   </div>
 </div>
 </a>
@@ -47,7 +47,6 @@ function get_html(name, description, url, imgUrl) {
 }
 
 let container = document.createElement('div')
-container.classList.add('edu-sites-container')
 
 sites.forEach(site => {
     let card = document.createElement('div')
